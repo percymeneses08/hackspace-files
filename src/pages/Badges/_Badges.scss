@@ -1,0 +1,7 @@
+.padding {
+  & .badges {
+    & .button {
+      @include button(147px, 40px, $color-orange-hackspace);
+    }
+  }
+}

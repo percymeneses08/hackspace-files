@@ -1,0 +1,61 @@
+.badge {
+  width: 540px;
+  height: fit-content;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: $box-shadow;
+  color: $color-text-light-black;
+
+  &-header {
+    background-color: $color-orange-hackspace;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .logo {
+      width: 64px;
+    }
+  }
+  &-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .userAvatar {
+      & img {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 120px;
+      }
+    }
+    & h2 {
+      font-size: 2.5rem;
+    }
+  }
+  &-info {
+    background-color: $color-background-light-gray;
+    padding: 8px 0;
+
+    & h3 {
+      font-size: 1.75rem;
+      margin: 0 0 8px;
+    }
+    & h4 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+    & h5 {
+      margin: 0;
+    }
+  }
+  &-footer {
+    color: $color-orange-hackspace;
+    background-color: #1d1d1b;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

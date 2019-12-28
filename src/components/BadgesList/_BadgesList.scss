@@ -1,0 +1,18 @@
+.badgesList {
+  margin-top: 30px;
+  & .unordered-list {
+    display: grid;
+    grid-template-columns: repeat(3, 378px);
+    // Esto es para que se repita infinitamente
+    grid-auto-rows: 277px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 35px;
+    row-gap: 26px;
+
+    & .list-item {
+      transform: scale(.7);
+    }
+  }
+}

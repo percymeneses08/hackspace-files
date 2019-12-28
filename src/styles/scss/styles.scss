@@ -1,0 +1,12 @@
+@import './lib/variables';
+@import './lib/mixins';
+
+@import '../../pages/Home/Home';
+@import '../../pages/Badges/Badges';
+@import '../../pages/BadgesCreate/BadgesCreate';
+
+@import '../../components/Navbar/Navbar';
+@import '../../components/Loader/Loader';
+@import '../../components/BadgeForm/BadgeForm';
+@import '../../components/Badge/Badge';
+@import '../../components/BadgesList/BadgesList';

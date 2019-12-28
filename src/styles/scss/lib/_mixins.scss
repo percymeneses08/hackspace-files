@@ -1,0 +1,25 @@
+@mixin button($width, $height, $background-color) {
+  width: $width;
+  height: $height;
+  background-color: $background-color;
+  
+  border: 0;
+  outline: none;
+  cursor: pointer;
+
+  padding-bottom: $height / 12.6667;
+  font-size: $height / 1.8095;
+  border-radius: $height / 6.3333;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-black-light;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: $transition-time-button;
+
+  &:active {
+    transform: $transform-scale-click;
+  }
+}

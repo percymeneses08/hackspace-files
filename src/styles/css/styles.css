@@ -1,0 +1,330 @@
+.padding {
+  padding: 115px 0 57.5px;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .padding .home {
+    margin-top: 134px; }
+    .padding .home h1 {
+      color: #292927;
+      font-size: 48px;
+      font-weight: 500;
+      margin: 10px 0;
+      line-height: 1.1; }
+    .padding .home h3 {
+      color: #989da0;
+      font-size: 24px;
+      font-weight: 300;
+      margin: 10px 0;
+      line-height: 1.1; }
+    .padding .home .button {
+      width: 120px;
+      height: 38px;
+      background-color: #fcbe00;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      padding-bottom: 2.99999px;
+      font-size: 21.00028px;
+      border-radius: 6.00003px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #292927;
+      text-decoration: none;
+      margin-top: 20px;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      .padding .home .button:active {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9); }
+
+.padding .badges .button {
+  width: 147px;
+  height: 40px;
+  background-color: #fcbe00;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding-bottom: 3.15789px;
+  font-size: 22.10555px;
+  border-radius: 6.31582px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #292927;
+  text-decoration: none;
+  margin-top: 20px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .padding .badges .button:active {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); }
+
+.badgesCreate {
+  margin-top: 20px;
+  width: 1280px;
+  position: relative; }
+
+body {
+  margin: 0 !important;
+  background-color: #fafafa; }
+
+.navbar {
+  width: 100%;
+  height: 115px;
+  position: fixed;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  background-color: #fafafa;
+  z-index: 1; }
+  .navbar-link img {
+    height: 87px; }
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 70vh; }
+
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 52px;
+  height: 20px; }
+  .lds-grid div {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fcbe00;
+    -webkit-animation: lds-grid .4s ease-in-out infinite;
+    animation: lds-grid .4s ease-in-out infinite; }
+    .lds-grid div:nth-child(1) {
+      top: 6px;
+      left: 6px;
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s; }
+    .lds-grid div:nth-child(2) {
+      top: 6px;
+      left: 26px;
+      -webkit-animation-delay: -1.33s;
+      animation-delay: -1.33s; }
+    .lds-grid div:nth-child(3) {
+      top: 6px;
+      left: 46px;
+      -webkit-animation-delay: -2.66s;
+      animation-delay: -2.66s; }
+    .lds-grid div:nth-child(4) {
+      top: 6px;
+      left: 56px;
+      -webkit-animation-delay: -3.99s;
+      animation-delay: -3.99s; }
+
+@-webkit-keyframes lds-grid {
+  0% {
+    left: 0px;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    left: 100%;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); } }
+
+@keyframes lds-grid {
+  0% {
+    left: 0px;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  80% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    left: 100%;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); } }
+
+.form {
+  text-align: left;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.18);
+  width: 350px;
+  padding: 33px 48px 0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 118px; }
+  .form-container {
+    color: #383838;
+    margin-bottom: 35px; }
+    .form-container h3 {
+      font-size: 26px;
+      margin: 0 0 8px; }
+    .form-container .input input {
+      color: #383838;
+      border: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+      outline: none;
+      font-family: inherit;
+      font-size: 20px;
+      width: 100%; }
+    .form-container .button {
+      width: 77px;
+      height: 35px;
+      background-color: #fcbe00;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      padding-bottom: 2.76315px;
+      font-size: 19.34236px;
+      border-radius: 5.52634px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #292927;
+      text-decoration: none;
+      margin-top: 20px;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      .form-container .button:active {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9); }
+
+.badge {
+  width: 540px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.18);
+  color: #383838; }
+  .badge-header {
+    background-color: #fcbe00;
+    height: 63px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .badge-header .logo {
+      width: 64px; }
+  .badge-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .badge-name .userAvatar img {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 120px; }
+    .badge-name h2 {
+      font-size: 2.5rem; }
+  .badge-info {
+    background-color: #fafafa;
+    padding: 8px 0; }
+    .badge-info h3 {
+      font-size: 1.75rem;
+      margin: 0 0 8px; }
+    .badge-info h4 {
+      margin: 0;
+      font-size: 1.3rem; }
+    .badge-info h5 {
+      margin: 0; }
+  .badge-footer {
+    color: #fcbe00;
+    background-color: #1d1d1b;
+    height: 54px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.badgesList {
+  margin-top: 30px; }
+  .badgesList .unordered-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (378px)[3];
+    grid-template-columns: repeat(3, 378px);
+    grid-auto-rows: 277px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 35px;
+    column-gap: 35px;
+    row-gap: 26px; }
+    .badgesList .unordered-list .list-item {
+      -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+      transform: scale(0.7); }

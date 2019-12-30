@@ -13,6 +13,9 @@
 
     & .list-item {
       transform: scale(.7);
+      & a {
+        text-decoration: none;
+      }
     }
   }
 }

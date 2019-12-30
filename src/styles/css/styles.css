@@ -86,6 +86,75 @@
   width: 1280px;
   position: relative; }
 
+.badgeDetails {
+  margin-top: 35px; }
+  .badgeDetails .options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    margin-top: 30px; }
+    .badgeDetails .options .edit .button {
+      width: 130px;
+      height: 40px;
+      background-color: #84dc00;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      padding-bottom: 3.15789px;
+      font-size: 22.10555px;
+      border-radius: 6.31582px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #292927;
+      text-decoration: none;
+      margin-top: 20px;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      .badgeDetails .options .edit .button:active {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9); }
+    .badgeDetails .options .delete .button {
+      width: 130px;
+      height: 40px;
+      background-color: #ff5252;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      padding-bottom: 3.15789px;
+      font-size: 22.10555px;
+      border-radius: 6.31582px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #292927;
+      text-decoration: none;
+      margin-top: 20px;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      .badgeDetails .options .delete .button:active {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9); }
+
 body {
   margin: 0 !important;
   background-color: #fafafa; }
@@ -328,3 +397,5 @@ body {
       -webkit-transform: scale(0.7);
       -ms-transform: scale(0.7);
       transform: scale(0.7); }
+      .badgesList .unordered-list .list-item a {
+        text-decoration: none; }

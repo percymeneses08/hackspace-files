@@ -5,25 +5,41 @@ import BadgeForm from '../../components/BadgeForm/BadgeForm'
 import Loader from '../../components/Loader/Loader'
 import api from '../../api'
 
-class BadgesCreate extends React.Component {
-  // Declaro e incializo el estado vacío
+class BadgeEdit extends React.Component {
   state = {
-    loading: false,
+    loading: true,
     error: null,
     form: {
-      firstName: "",
-      lastName: "",
-      area: "",
-      experience: "",
-      portfolio: "",
-      email: ""
+      firstName: '',
+      lastName: '',
+      area: '',
+      experience: '',
+      portfolio: '',
+      email: ''
     }
   }
 
-  // Y cada vez que se actualice
+  // Pedimos los datos para editarlos
+  componentDidMount() {
+    this.fetchData()
+  }
+
+  fetchData = async e => {
+    this.setState({ loading: true, error: null })
+
+    try {
+      const data = await api.badges.read(
+        this.props.match.params.badgeId
+      )
+      
+      this.setState({ loading: false, form: data })
+    } catch(error) {
+      this.setState({ loading: false, error: error })
+    }
+  }
+
   handleChange = e => {
     this.setState({
-      // Voy actualizando los datos al form con lo que se vaya escribiendo en el input
       form: {
         ...this.state.form,
         [e.target.name]: e.target.value
@@ -32,19 +48,17 @@ class BadgesCreate extends React.Component {
   }
 
   handleSubmit = async e => {
-    // Esto detiene el envio del form al realizar click en el botón
+    // Detenemos el envío del formulario
     e.preventDefault()
-    // Aquí empieza la petición para guardar el nuevo badge que hemos realizado,
-    // entonces el loading es true
+    // Empezamos la petición
     this.setState({ loading: true, error: null })
 
     try {
-      await api.badges.create(this.state.form)
+      await api.badges.update(this.props.match.params.badgeId, this.state.form)
       this.setState({ loading: false })
-
-      // Cuando se guarden los datos me va a dirigir más esta ruta al final
-      this.props.history.push("/badges")
-    } catch (error) {
+      // Y nos redirigimos a la página donde están los badges
+      this.props.history.push('/badges')
+    } catch(error) {
       this.setState({ loading: false, error: error })
     }
   }
@@ -54,22 +68,21 @@ class BadgesCreate extends React.Component {
       return <Loader />
     }
 
-    return (
+    return(
       <div className="padding">
-        <div className="badgesCreate">
+        <div className="badgesEdit">
           <Badge
             BadgePosition="fixed"
             BadgeLeft="5%"
-            // Le paso los valores actualizados
-            firstNameValue={this.state.form.firstName || "First name"}
-            lastNameValue={this.state.form.lastName || "Last name"}
+
+            firstNameValue={this.state.form.firstName}
+            lastNameValue={this.state.form.lastName}
             areaValue={this.state.form.area || "Area"}
             experienceValue={this.state.form.experience || "Experience"}
             portfolioValue={this.state.form.portfolio || "Portfolio"}
-            emailValue={this.state.form.email || "Email"}
+            emailValue={this.state.form.email}
           />
-          <BadgeForm 
-            // Le paso la función handleChange declarada arriba a BadgeForm con otro nombre, onChange en este caso
+          <BadgeForm
             onChange={this.handleChange}
             onSubmit={this.handleSubmit}
             formValues={this.state.form}
@@ -80,4 +93,4 @@ class BadgesCreate extends React.Component {
   }
 }
 
-export default BadgesCreate
+export default BadgeEdit

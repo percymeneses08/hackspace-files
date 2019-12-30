@@ -12,7 +12,7 @@ class Badge extends React.Component {
         </div>
         <div className="badge-name">
           <figure className="userAvatar">
-            <Gravatar emailGravatar={this.props.emailValue} />
+            {/* <Gravatar emailGravatar={this.props.emailValue} /> */}
           </figure>
           <h2>{this.props.firstNameValue} <br/> {this.props.lastNameValue}</h2>
         </div>

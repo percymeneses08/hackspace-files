@@ -17,7 +17,10 @@ class BadgeForm extends React.Component{
               placeholder="example: Pepe"
               // El name es para identificarlo con el target.name
               name="firstName"
+
               onChange={this.props.onChange}
+              value={this.props.formValues.firstName}
+
               required
             />
           </div>
@@ -29,7 +32,10 @@ class BadgeForm extends React.Component{
               type="text"
               placeholder="example: López"
               name="lastName"
+
               onChange={this.props.onChange}
+              value={this.props.formValues.lastName}
+
               required
             />
           </div>
@@ -41,7 +47,10 @@ class BadgeForm extends React.Component{
               type="text"
               placeholder="example: Front-end developer"
               name="area"
+              
               onChange={this.props.onChange}
+              value={this.props.formValues.area}
+
               autoComplete="off"
               required
             />
@@ -54,7 +63,10 @@ class BadgeForm extends React.Component{
               type="text"
               placeholder="example: Semi-senior"
               name="experience"
+              
               onChange={this.props.onChange}
+              value={this.props.formValues.experience}
+
               autoComplete="off"
               required
             />
@@ -67,7 +79,10 @@ class BadgeForm extends React.Component{
               type="text"
               placeholder="example.com"
               name="portfolio"
+              
               onChange={this.props.onChange}
+              value={this.props.formValues.portfolio}
+
               autoComplete="off"
               required
             />
@@ -80,7 +95,10 @@ class BadgeForm extends React.Component{
               type="email"
               placeholder="example@hotmail.com"
               name="email"
+
               onChange={this.props.onChange}
+              value={this.props.formValues.email}
+
               required
             />
           </div>

@@ -15,7 +15,8 @@ function App() {
         <Layout>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/badges" component={Badges}></Route>
-          <Route exact path="/badges/badgesCreate" component={BadgesCreate}></Route>
+          {/* <Route exact path="/badges/badgesCreate" component={BadgesCreate}></Route> */}
+          <Route exact path="/badges/create/badgesCreate" component={BadgesCreate}></Route>
           <Route exact path="/badges/:badgeId" component={BadgeDetailsContainer}></Route>
           <Route exact path="/badges/:badgeId/edit" component={BadgeEdit}></Route>
         </Layout>

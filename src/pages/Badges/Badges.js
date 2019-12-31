@@ -38,7 +38,7 @@ class Badges extends React.Component {
     return (
       <div className="padding">
         <div className="badges">
-          <Link className="button" to="/badges/badgesCreate">New Badge</Link>
+          <Link className="button" to="badges/create/badgesCreate">New Badge</Link>
           <div className="badgesList">
             <BadgesList badges={this.state.data} />
           </div>

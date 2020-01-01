@@ -28,7 +28,6 @@
       border: 0;
       outline: none;
       cursor: pointer;
-      padding-bottom: 2.99999px;
       font-size: 21.00028px;
       border-radius: 6.00003px;
       display: -webkit-inline-box;
@@ -40,7 +39,7 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      color: #292927;
+      color: #fafafa;
       text-decoration: none;
       margin-top: 20px;
       -webkit-transition: 0.2s;
@@ -58,7 +57,6 @@
   border: 0;
   outline: none;
   cursor: pointer;
-  padding-bottom: 3.15789px;
   font-size: 22.10555px;
   border-radius: 6.31582px;
   display: -webkit-inline-box;
@@ -70,7 +68,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #292927;
+  color: #fafafa;
   text-decoration: none;
   margin-top: 20px;
   -webkit-transition: 0.2s;
@@ -87,7 +85,7 @@
   position: relative; }
 
 .badgeDetails {
-  margin-top: 35px; }
+  margin-top: 25px; }
   .badgeDetails .options {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -95,7 +93,7 @@
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    margin-top: 30px; }
+    margin-top: 25px; }
     .badgeDetails .options .edit .button {
       width: 130px;
       height: 40px;
@@ -103,7 +101,6 @@
       border: 0;
       outline: none;
       cursor: pointer;
-      padding-bottom: 3.15789px;
       font-size: 22.10555px;
       border-radius: 6.31582px;
       display: -webkit-inline-box;
@@ -115,12 +112,13 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      color: #292927;
+      color: #fafafa;
       text-decoration: none;
       margin-top: 20px;
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
-      transition: 0.2s; }
+      transition: 0.2s;
+      margin: 0; }
       .badgeDetails .options .edit .button:active {
         -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
@@ -132,7 +130,6 @@
       border: 0;
       outline: none;
       cursor: pointer;
-      padding-bottom: 3.15789px;
       font-size: 22.10555px;
       border-radius: 6.31582px;
       display: -webkit-inline-box;
@@ -144,12 +141,13 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      color: #292927;
+      color: #fafafa;
       text-decoration: none;
       margin-top: 20px;
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
-      transition: 0.2s; }
+      transition: 0.2s;
+      margin: 0; }
       .badgeDetails .options .delete .button:active {
         -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
@@ -286,7 +284,6 @@ body {
       border: 0;
       outline: none;
       cursor: pointer;
-      padding-bottom: 2.76315px;
       font-size: 19.34236px;
       border-radius: 5.52634px;
       display: -webkit-inline-box;
@@ -298,7 +295,7 @@ body {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      color: #292927;
+      color: #fafafa;
       text-decoration: none;
       margin-top: 20px;
       -webkit-transition: 0.2s;
@@ -399,3 +396,128 @@ body {
       transform: scale(0.7); }
       .badgesList .unordered-list .list-item a {
         text-decoration: none; }
+
+.deleteBadgeModal {
+  width: 100%;
+  padding: 20px; }
+  .deleteBadgeModal h1 {
+    margin-top: 0; }
+  .deleteBadgeModal p {
+    height: 30%; }
+  .deleteBadgeModal .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .deleteBadgeModal .buttons .cancel {
+      width: 100px;
+      height: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      font-size: 16.57917px;
+      border-radius: 4.73687px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #fafafa;
+      text-decoration: none;
+      margin-top: 20px;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      margin-top: 0;
+      margin-right: 5px;
+      color: #383838; }
+      .deleteBadgeModal .buttons .cancel:active {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9); }
+    .deleteBadgeModal .buttons .delete {
+      width: 100px;
+      height: 30px;
+      background-color: #ff5252;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      font-size: 16.57917px;
+      border-radius: 4.73687px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #fafafa;
+      text-decoration: none;
+      margin-top: 20px;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      margin: 0; }
+      .deleteBadgeModal .buttons .delete:active {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9); }
+
+.Modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .Modal .container {
+    width: 450px;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .Modal .container .button-container {
+      height: 25px;
+      text-align: end; }
+      .Modal .container .button-container .close {
+        width: 25px;
+        background: none;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+        text-align: left;
+        font-weight: bolder; }
+    .Modal .container .padding-modal {
+      height: 100%;
+      padding: 0 25px 25px 25px; }
+      .Modal .container .padding-modal .content {
+        height: 100%;
+        background-color: white;
+        border-radius: 8px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }

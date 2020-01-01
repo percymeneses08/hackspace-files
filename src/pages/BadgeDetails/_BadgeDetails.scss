@@ -1,19 +1,21 @@
 .badgeDetails {
-  margin-top: 35px;
+  margin-top: 25px;
 
   & .options {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px;
+    margin-top: 25px;
 
     & .edit {
       & .button {
         @include button(130px, 40px, $color-button-success);
+        margin: 0;
       }
     }
     & .delete {
       & .button {
         @include button(130px, 40px, $color-button-warning);
+        margin: 0;
       }
     }
   }

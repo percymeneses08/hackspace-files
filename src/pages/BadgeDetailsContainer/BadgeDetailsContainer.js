@@ -2,6 +2,7 @@ import React from 'react'
 
 import BadgeDetails from '../BadgeDetails/BadgeDetails'
 import Loader from '../../components/Loader/Loader'
+import PageError from '../../components/pageError/pageError'
 import api from '../../api'
 
 class BadgeDetailsContainer extends React.Component {
@@ -53,6 +54,10 @@ class BadgeDetailsContainer extends React.Component {
   render() {
     if(this.state.loading) {
       return <Loader />
+    }
+
+    if(this.state.error) {
+      return <PageError error={this.state.error} />
     }
 
     return(

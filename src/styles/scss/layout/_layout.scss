@@ -1,0 +1,13 @@
+@include respond-to($width-hd - 1) {
+  .badgesList {
+    & .header {
+      width: 100vw;
+      & .header-width {
+        width: 984px;
+
+      }
+    }
+  }
+  .header-width {
+  }
+}

@@ -24,3 +24,22 @@
     transform: $transform-scale-click;
   }
 }
+@mixin div-input-styles($width, $height) {
+  display: flex;
+  border: 0;
+  border-radius: $border-radius-button;
+  box-shadow: $box-shadow;
+  height: $height;
+  width: $width;
+  outline: none;
+  padding: 0 14px;
+  background-color: white;
+  font-size: $size-input;
+  color: $color-container;
+}
+
+@mixin respond-to($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}

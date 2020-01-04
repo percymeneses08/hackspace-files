@@ -50,35 +50,6 @@
         -ms-transform: scale(0.9);
         transform: scale(0.9); }
 
-.padding .badges .button {
-  width: 147px;
-  height: 40px;
-  background-color: #fcbe00;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  font-size: 22.10555px;
-  border-radius: 6.31582px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #fafafa;
-  text-decoration: none;
-  margin-top: 20px;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s; }
-  .padding .badges .button:active {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9); }
-
 .badgesCreate {
   margin-top: 20px;
   width: 1280px;
@@ -372,30 +343,108 @@ body {
     -ms-flex-pack: center;
     justify-content: center; }
 
-.badgesList {
-  margin-top: 30px; }
-  .badgesList .unordered-list {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (378px)[3];
-    grid-template-columns: repeat(3, 378px);
-    grid-auto-rows: 277px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    justify-items: center;
+.badgesList .header {
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: #fafafa; }
+  .badgesList .header .header-width {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1204px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-column-gap: 35px;
-    column-gap: 35px;
-    row-gap: 26px; }
-    .badgesList .unordered-list .list-item {
-      -webkit-transform: scale(0.7);
-      -ms-transform: scale(0.7);
-      transform: scale(0.7); }
-      .badgesList .unordered-list .list-item a {
-        text-decoration: none; }
+    padding: 12px 0; }
+    .badgesList .header .header-width .hackspaceLogo {
+      height: 70px; }
+    .badgesList .header .header-width .write {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border: 0;
+      border-radius: 6px;
+      -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.18);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.18);
+      height: 44px;
+      width: 310px;
+      outline: none;
+      padding: 0 14px;
+      background-color: white;
+      font-size: 19px;
+      color: #2D2D2D; }
+      .badgesList .header .header-width .write .searchImg {
+        width: 19px;
+        height: 100%;
+        margin: 0 14px 0 0; }
+      .badgesList .header .header-width .write input {
+        width: 100%;
+        border: 0;
+        outline: none;
+        font-size: 18px;
+        color: #5f6368; }
+    .badgesList .header .header-width .button {
+      width: 147px;
+      height: 40px;
+      background-color: #fcbe00;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      font-size: 22.10555px;
+      border-radius: 6.31582px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #fafafa;
+      text-decoration: none;
+      margin-top: 20px;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      margin: 0; }
+      .badgesList .header .header-width .button:active {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9); }
+
+.badgesList .unordered-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (378px)[3];
+  grid-template-columns: repeat(3, 378px);
+  grid-auto-rows: 277px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 35px;
+  column-gap: 35px;
+  row-gap: 26px; }
+  .badgesList .unordered-list .list-item {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7); }
+    .badgesList .unordered-list .list-item a {
+      text-decoration: none; }
 
 .deleteBadgeModal {
   width: 100%;
@@ -521,3 +570,21 @@ body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
+
+.pageError {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+@media screen and (max-width: 1279px) {
+  .badgesList .header {
+    width: 100vw; }
+    .badgesList .header .header-width {
+      width: 984px; } }

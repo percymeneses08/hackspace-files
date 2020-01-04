@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import Loader from '../../components/Loader/Loader'
 import BadgesList from '../../components/BadgesList/BadgesList'
+import PageError from '../../components/pageError/pageError'
+import Navbar from '../../components/Navbar/Navbar'
 import api from '../../api'
 
 class Badges extends React.Component {
@@ -31,18 +33,27 @@ class Badges extends React.Component {
   }
 
   render() {
+    // Esto es para que solo se actualice cuando sea necesario
     if(this.state.loading && !this.state.data) {
-      return <Loader />
+      return(
+        <React.Fragment>
+          <Navbar />
+          <Loader />
+        </React.Fragment>
+      )
+    }
+    if(this.state.error) {
+      return(
+        <React.Fragment>
+          <Navbar />
+          <PageError error={this.state.error} />
+        </React.Fragment>
+      ) 
     }
 
     return (
-      <div className="padding">
-        <div className="badges">
-          <Link className="button" to="badges/create/badgesCreate">New Badge</Link>
-          <div className="badgesList">
-            <BadgesList badges={this.state.data} />
-          </div>
-        </div>
+      <div className="badges">
+        <BadgesList badges={this.state.data} />
       </div>
     )
   }

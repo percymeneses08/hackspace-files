@@ -2,7 +2,6 @@
 @import './lib/mixins';
 
 @import '../../pages/Home/Home';
-@import '../../pages/Badges/Badges';
 @import '../../pages/BadgesCreate/BadgesCreate';
 @import '../../pages/BadgeDetails/BadgeDetails';
 
@@ -13,3 +12,6 @@
 @import '../../components/BadgesList/BadgesList';
 @import '../../components/DeleteBadgeModal/DeleteBadgeModal';
 @import '../../components/Modal/Modal';
+@import '../../components/pageError/pageError';
+
+@import './layout/layout';

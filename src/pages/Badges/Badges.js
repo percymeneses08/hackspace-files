@@ -26,7 +26,9 @@ class Badges extends React.Component {
     
     try {
       const data = await api.badges.list()
+      console.log(data[0]._id)
       this.setState({loading: false, data: data})
+      console.log(data)
     } catch(error) {
       this.setState({loading: false, error: error})
     }

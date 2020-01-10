@@ -1,7 +1,8 @@
 .badge {
-  width: 540px;
-  height: fit-content;
-  border-radius: 8px;
+  width: 13.5em;
+  height: 9.675em;
+  // border-radius: 8px;
+  border-radius: 0.2857em;
   overflow: hidden;
   background-color: white;
   box-shadow: $box-shadow;
@@ -9,53 +10,71 @@
 
   &-header {
     background-color: $color-orange-hackspace;
-    height: 63px;
+    // height: 63px;
+    height: 1.6em;
     display: flex;
     align-items: center;
     justify-content: center;
 
     & .logo {
-      width: 64px;
+      width: 1.6em;
     }
   }
   &-name {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 4.3em;
 
     & .userAvatar {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 3em;
+      height: 3em;
+      margin: 0;
+
       & img {
-        border-radius: 50%;
-        overflow: hidden;
-        width: 120px;
+        width: 100%;
       }
     }
     & h2 {
-      font-size: 2.5rem;
+      font-size: 1em;
+      margin: 0;
+      margin-left: 1em;
     }
   }
   &-info {
     background-color: $color-background-light-gray;
-    padding: 8px 0;
+    padding: 0.2857em 0;
+    height: 2.225em;
+    // height: 8.7vw;
 
     & h3 {
-      font-size: 1.75rem;
-      margin: 0 0 8px;
+      margin: 0 0 0.2857em;
+      font-size: 0.7em;
     }
     & h4 {
       margin: 0;
-      font-size: 1.3rem;
+      font-size: 0.5em;
     }
     & h5 {
       margin: 0;
+      font-size: 0.33em;
     }
   }
   &-footer {
     color: $color-orange-hackspace;
     background-color: #1d1d1b;
-    height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
+    // height: 54px;
+    height: 1em;
+    // height: 5.2vw;
+
+    & h4 {
+      margin: 0;
+      font-size: 0.4em;
+    }
   }
 }

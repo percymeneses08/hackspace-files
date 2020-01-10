@@ -8,8 +8,10 @@ function BadgeDetails(props) {
   const badge = props.badge
   return(
     <div className="badgeDetails">
-      <div>
+      <div className="badgeContainerFontSize">
         <Badge
+          fontSize="40px"
+
           firstNameValue={badge.firstName}
           lastNameValue={badge.lastName}
           areaValue={badge.area || "Area"}

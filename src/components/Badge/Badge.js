@@ -6,7 +6,7 @@ import HackspaceMini from '../../images/logo.png'
 class Badge extends React.Component {
   render() {
     return (
-    <div className="badge" style={{position: this.props.BadgePosition, left: this.props.BadgeLeft}}>
+    <div className="badge" style={{position: this.props.BadgePosition, left: this.props.BadgeLeft, width: this.props.width, fontSize: this.props.fontSize}}>
         <div className="badge-header">
           <img className="logo" src={HackspaceMini} alt="hackspace-mini.png"/>
         </div>

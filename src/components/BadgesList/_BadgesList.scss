@@ -19,6 +19,7 @@
       }
       & .write {
         @include div-input-styles(310px, 44px);
+        width: 100%;
         
         & .searchImg {
           width: 19px;
@@ -40,18 +41,18 @@
     }
   }
   & .unordered-list {
+    font-size: 26.556px;
     display: grid;
-    grid-template-columns: repeat(3, 378px);
-    // Esto es para que se repita infinitamente
-    grid-auto-rows: 277px;
+    grid-template-columns: repeat(auto-fill, 13.5em);
     justify-content: center;
     justify-items: center;
     align-items: center;
-    column-gap: 35px;
-    row-gap: 26px;
+    gap: 26px;
+    width: 100vw;
 
     & .list-item {
-      transform: scale(.7);
+      width: 100%;
+
       & a {
         text-decoration: none;
       }

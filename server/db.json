@@ -10,24 +10,6 @@
       "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
     },
     {
-      "id": "a9748581-dfdc-4a78-930d-5205a2ccef48",
-      "firstName": "Tatyana",
-      "lastName": "Von",
-      "email": "Herminio.Schmeler@hotmail.com",
-      "jobTitle": "Central Branding Representative",
-      "twitter": "TatyanaVon35871-3686",
-      "avatarUrl": "https://www.gravatar.com/avatar/98c382edd93414c1649b9db866000f97?d=identicon"
-    },
-    {
-      "id": "1921a734-cc05-4f71-a677-ffe38dda6958",
-      "firstName": "Maude",
-      "lastName": "Effertz",
-      "email": "Dan_Weimann0@yahoo.com",
-      "jobTitle": "Product Solutions Analyst",
-      "twitter": "MaudeEffertz73114",
-      "avatarUrl": "https://www.gravatar.com/avatar/01d0de92ec9ca4fdfbb99edf6a1abfea?d=identicon"
-    },
-    {
       "id": "3629db36-14f9-4f24-b139-200f3a1b9af7",
       "firstName": "Breanna",
       "lastName": "Runolfsdottir",
@@ -430,15 +412,6 @@
       "jobTitle": "Front-end",
       "twitter": "percymeneses08",
       "id": "E7k4s9l"
-    },
-    {
-      "firstName": "Jeremy",
-      "lastName": "Meneses",
-      "area": "student",
-      "experience": "junior",
-      "portfolio": "jeremy.com",
-      "email": "jeremy@hotmail.com",
-      "id": "gRZs9CE"
     }
   ]
 }

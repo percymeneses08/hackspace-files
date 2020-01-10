@@ -31,7 +31,7 @@ function BadgesList(props) {
       <div className="header">
         <div className="header-width">
           <img className="hackspaceLogo" src={HackspaceMini} alt="HackspaceMini logo"/>
-          <div>
+          <div className="text-write">
             <div className="write">
               <img className="searchImg" src={Search} alt="search img"/>
               <input 
@@ -54,8 +54,9 @@ function BadgesList(props) {
               <div className="list-item" key={badge.id}>
                 <Link to={`/badges/${badge.id}`}>
                   <Badge
-                    BadgeWidth="378px"
-                    BadgeHeight="219.36px"
+                    // BadgeWidth="378px"
+                    // BadgeHeight="219.36px"
+                    // fontSize="19.556px"
 
                     firstNameValue={badge.firstName}
                     lastNameValue={badge.lastName}

@@ -59,7 +59,8 @@ class BadgesCreate extends React.Component {
         <div className="badgesCreate">
           <Badge
             BadgePosition="fixed"
-            BadgeLeft="5%"
+            BadgeLeft="1.57em"
+            
             // Le paso los valores actualizados
             firstNameValue={this.state.form.firstName || "First name"}
             lastNameValue={this.state.form.lastName || "Last name"}

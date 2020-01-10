@@ -38,8 +38,13 @@
   color: $color-container;
 }
 
-@mixin respond-to($width) {
+@mixin respond-to-max($width) {
   @media screen and (max-width: $width) {
+    @content;
+  }
+}
+@mixin respond-to-min($width) {
+  @media screen and (min-width: $width) {
     @content;
   }
 }

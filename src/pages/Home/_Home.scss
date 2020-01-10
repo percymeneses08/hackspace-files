@@ -2,8 +2,11 @@
   padding: $height-navbar 0 $height-navbar/2;
   background-color: $color-background-light-gray;
   
+  // height: 100vh;
+  
   display: flex;
   justify-content: center;
+  // align-items: center;
 
   & .home {
     margin-top: 134px;

@@ -73,7 +73,7 @@ class BadgeEdit extends React.Component {
         <div className="badgesEdit">
           <Badge
             BadgePosition="fixed"
-            BadgeLeft="5%"
+            BadgeLeft="1.75em"
 
             firstNameValue={this.state.form.firstName}
             lastNameValue={this.state.form.lastName}
